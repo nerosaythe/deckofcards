@@ -2,8 +2,8 @@ package CardGame;
 import java.util.ArrayList;
 import java.util.Collections;
 public class Deck {
-	public ArrayList<Character> deck = new ArrayList(52);
-	public ArrayList<Character> scrap = new ArrayList(52);
+	public ArrayList<Character> deck = new ArrayList<Character>(52);
+	static public ArrayList<Character> scrap = new ArrayList<Character>(52);
 
 	@SuppressWarnings("unchecked")
 	public Deck() {
@@ -66,8 +66,9 @@ public class Deck {
 		}
 
 	
-    public void insertCard(char insert) {
+    public static void insertCard(char insert) {
     	//should be invoked with a character, adds that character to the scrap deck
+    	// test case
     	scrap.add(insert);	
     }
 
